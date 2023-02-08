@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 body {
     background: #000;
 }
@@ -20,20 +27,20 @@ body {
 }
 
 .logo #verticalline {
-    position: relative;
+    position: absolute;
     display: inline-block;
     border: 2px solid #000;
     left: 33rem;
-    bottom: 2.6rem;
-    height: 22rem;
+    bottom: -35px;
+    height: 125%;
 }
 
 .logo #horizontalline {
-    position: relative;
+    position: absolute;
     display: inline-block;
     border: 2px solid #000;
     left: 100%;
-    bottom: 15rem;
+    bottom: 9rem;
     width: 25rem;
 }
 
@@ -58,4 +65,17 @@ body {
     .logo #verticalline {
         left: 12rem;
     }
+}
+
+
+@media all and (max-width: 600px){
+    .logo{
+        left: 0;
+        width: 90%;
+        margin-left: 0;
+    }
+    .logo #verticalline {
+        left: 20rem;
+    }
+    
 }
